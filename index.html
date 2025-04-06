@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>四択クイズ</title>
+  <title>地方自治法クイズ</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background: #f4f4f4; }
+    #quiz-box { background: white; padding: 20px; border-radius: 10px; max-width: 600px; margin: auto; }
+    button { padding: 10px 20px; margin-top: 10px; }
+    .choice { margin: 5px 0; }
+    #result { font-weight: bold; margin-top: 10px; }
+  </style>
 </head>
 <body>
-  <h1>四択クイズ</h1>
-  <div id="quiz-container"></div>
-  <button onclick="checkAnswer()">回答する</button>
-  <p id="result"></p>
+  <div id="quiz-box">
+    <h1>地方自治法クイズ</h1>
+    <div id="quiz-container"></div>
+    <button id="submit">回答する</button>
+    <p id="result"></p>
+    <button id="next" style="display:none;">次の問題へ</button>
+  </div>
 
   <script src="quiz.js"></script>
 </body>
